@@ -1,0 +1,8 @@
+<!DOCTYPE student[
+        <!ENTITY my_outer_entity SYSTEM "file:///d:/Imiaodev/Test/xxe-injection-demo.txt">
+
+        ]>
+
+<student>
+    <name>&my_outer_entity;</name>
+</student>

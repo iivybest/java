@@ -1,0 +1,49 @@
+一、JNDI是什么？
+JNDI--Java 命名和目录接口（Java Naming and Directory Interface），
+	是一组在Java应用中访问命名和目录服务的API。
+	
+二、JNDI好处
+ 解耦：通过注册、查找JNDI服务，可以直接使用服务，而无需关心服务提供者，
+ 	这样程序不至于与访问的资源耦合！
+
+JNDI优点：
+ 包含了大量的命名和目录服务，使用通用接口来访问不同种类的服务；
+ 可以同时连接到多个命名或目录服务上；
+ 建立起逻辑关联，允许把名称同Java对象或资源关联起来，而不必知道对象或资源的物理ID。
+ 
+ JNDI程序包：
+ 	javax.naming：命名操作； 　　
+ 	javax.naming.directory：目录操作；
+ 	javax.naming.event：在命名目录服务器中请求事件通知；
+ 	javax.naming.ldap：提供LDAP支持；
+ 	javax.naming.spi：允许动态插入不同实现。 　　
+ 	
+ 利用JNDI的命名与服务功能来满足企业级APIs对命名与服务的访问，
+ 诸如EJBs、JMS、JDBC 2.0以及IIOP上的RMI通过JNDI来使用CORBA的命名服务。
+ 
+ 
+ JNDI在Java EE中的应用
+JNDI技术是Java EE规范中的一个重要“幕后”角色，它为Java EE容器、组件提供者和应用程序之间提供了桥梁作用：
+Java EE容器同时扮演JNDI提供者角色，组件提供者将某个服务的具体实现部署到容器上，
+应用程序通过标准的JNDI接口就可以从容器上发现并使用服务，而不用关心服务的具体实现是什么，它的具体位置在哪里。
+    下面以一个常见的J2EE应用场景来看四种角色（组件接口、容器、组件提供者、应用程序）是如何围绕JNDI来发挥作用的：
+组件接口
+    数据源DataSource是一种很常见的服务。我们通常将组件接口绑定到容器的Context上供客户调用。
+Java EE容器
+	Tomcat是一种常见的Java EE容器，其他的还有JBoss,WebLogic，它们同时也实现了JNDI提供者规范。
+容器通常提供一个JNDI注入场所供加入组件的具体实现，比如Tomcat中的Server.xml配置文件。
+ 
+ ------------------------------------------------------------------------------------
+ DEMO
+ 1、指定JNDI提供者
+要使用JNDI，首先要配置JNDI提供者。在我们的Java SE应用中，没有Java EE容器充当JNDI提供者，
+因此我们要指定其他的JNDI提供者。
+在我们的例子里，我们使用SUN的文件系统服务提供者File System Service Provider。
+由于SUN的文件系统服务提供者并没有包含在JDK中，
+我们需要从SUN网站上下载：http://java.sun.com/products/jndi/downloads/index.html。
+它包含两个jar文件：fscontext.jar和providerutil.jar。我们将这两个文件加入项目的类路径中。
+
+2、定义服务接口
+首先，我们在服务接口package(xyz.service)中定义服务接口：DBService和LogService，
+分别表示数据库服务和日志服务。
+ 
