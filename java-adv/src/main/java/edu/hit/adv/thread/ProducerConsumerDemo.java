@@ -1,9 +1,15 @@
 package edu.hit.adv.thread;
 
+import org.ivy.util.common.DateTimeUtil;
+
 import java.util.Stack;
 import java.util.UUID;
-import java.util.concurrent.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.locks.LockSupport;
 
 /**
  * <p> description: a demo of producer and consumer
@@ -17,6 +23,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @version 1.0
  * @date 2015/6/2 14:36
  */
+//@Slf4j
 public class ProducerConsumerDemo {
 
     private static int countProducer = 2;
@@ -37,11 +44,10 @@ public class ProducerConsumerDemo {
             r -> new Thread("c-" + counterC.incrementAndGet()),
             new ThreadPoolExecutor.AbortPolicy());
 
-    public static void main(String[] args) {
-        ProducerConsumerDemo instance = new ProducerConsumerDemo();
 
+    public static void main(String[] args) {
         // 篮子，馒头容器
-        Basket basket = new Basket();
+        Basket<SteamedBread> basket = new Basket();
 
         // 2个厨师做馒头
         serviceP.execute(new Producer(basket));
@@ -54,12 +60,12 @@ public class ProducerConsumerDemo {
         }
     }
 
-
     /**
-     * @author ivybest imiaodev@163.com
-     * @date 2017年11月1日 下午12:41:44
-     * @version 1.0 ------------------------------------------
      * 馒头
+     *
+     * @author ivybest imiaodev@163.com
+     * @version 1.0
+     * @date 2017年11月1日 下午12:41:44
      */
     private static class SteamedBread {
         private String id;
@@ -78,22 +84,21 @@ public class ProducerConsumerDemo {
      * 篮子
      *
      * @author ivybest imiaodev@163.com
-     * @date 2017年11月1日 下午12:42:08
      * @version 1.0
-     * ------------------------------------------
+     * @date 2017年11月1日 下午12:42:08
      */
-    private static class Basket {
-        private int max;
-        private Stack<SteamedBread> stack;
+    private static class Basket<T> {
+        private int capacity;
+        private Stack<T> stack;
 
         public Basket() {
-            this.stack = new Stack<SteamedBread>();
-            this.max = 20;
+            this.stack = new Stack<>();
+            this.capacity = 20;
         }
 
         public Basket(int size) {
             this();
-            this.max = size;
+            this.capacity = size;
         }
 
         /**
@@ -101,8 +106,8 @@ public class ProducerConsumerDemo {
          *
          * @param item item
          */
-        public synchronized void push(SteamedBread item) {
-            while (stack.size() >= max) {
+        public synchronized void push(T item) {
+            while (stack.size() >= capacity) {
                 /*
                  * 当前的正在该对象上访问的线程wait，必须synchronized，才能wait
                  * wait后，必须notify叫醒，而且wait后锁不在归该线程所有
@@ -125,7 +130,7 @@ public class ProducerConsumerDemo {
          *
          * @return SteamedBread
          */
-        public synchronized SteamedBread pop() {
+        public synchronized T pop() {
             while (stack.size() <= 0) {
                 try {
                     System.out.println("Basket is empty....");
@@ -148,17 +153,24 @@ public class ProducerConsumerDemo {
      * 生产者
      *
      * @author ivybest imiaodev@163.com
-     * @date 2017年11月1日 下午12:38:55
      * @version 1.0
+     * @date 2017年11月1日 下午12:38:55
      */
     private static class Producer implements Runnable {
-        private int num = 0;
+        private final int CAPACITY_DEFAULT = 20;
+        private int capacity;
+        private int counter = 0;
         private Basket basket;
         private boolean stop;
 
         public Producer(Basket basket) {
+            this(basket, -1);
+        }
+
+        public Producer(Basket basket, int capacity) {
             this.basket = basket;
             this.stop = false;
+            this.capacity = capacity <= 0 ? CAPACITY_DEFAULT : capacity;
         }
 
         public void setStop(boolean stop) {
@@ -167,25 +179,24 @@ public class ProducerConsumerDemo {
 
         @Override
         public void run() {
-            while (!stop) this.produceFlow();
+            while (!stop) {
+                this.produceFlow();
+            }
         }
 
         /**
          * produceFlow
          * 生成流程，制作一个馒头，然后放入篮子中
-         *
          */
         private void produceFlow() {
             this.pushSteamedBread(this.createSteamedBread());
-            System.out.println(Thread.currentThread().getName() + " made" + ++num
-                    + ", basket " + this.basket.getSize());
-            try {
-                Thread.sleep(500);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            if (num >= 20) {
-                // 每人只做20个馒头
+            System.out.println(Thread.currentThread().getName()
+                    + " made"
+                    + ++counter
+                    + " basket "
+                    + this.basket.getSize());
+            LockSupport.parkUntil(DateTimeUtil.getTimestamp(null) + 500);
+            if (counter >= this.capacity) {
                 this.setStop(true);
             }
         }
@@ -205,14 +216,14 @@ public class ProducerConsumerDemo {
      * 消费者
      *
      * @author ivybest imiaodev@163.com
-     * @date 2017年11月1日 下午12:37:54
      * @version 1.0
+     * @date 2017年11月1日 下午12:37:54
      */
     private static class Consumer implements Runnable {
         private int num = 0;
         private boolean stop;
 
-        private Basket basket;
+        private Basket<SteamedBread> basket;
 
         public Consumer(Basket basket) {
             super();
