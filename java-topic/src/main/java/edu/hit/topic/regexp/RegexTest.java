@@ -1,25 +1,7 @@
 /**
- * @Filename RegexTest
- * @author ivybest ivybestdev@163.com
- * @version V1.0
- * @date 2018年7月10日 下午4:12:12
- * @Company IB.
- * @Copyright Copyright(C) 2010-
- * All rights Reserved, Designed By Ivybest
- * <p>
- * Modification History:
- * Date				Author		Version		Discription
- * --------------------------------------------------------
- * 2018年7月10日	Ivybest			1.0			new create
- */
-package edu.hit.topic.regexp;
-
-/**
  * @author Ivybest imiaodev@163.com
- * @date 2018年7月10日 下午4:12:12
  * @version 1.0
- * ------------------------------------------
- *  TODO(这里用一句话描述这个类的作用)
+ * @date 2018年7月10日 下午4:12:12
  */
 public class RegexTest {
     public static void main(String[] args) {
