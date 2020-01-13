@@ -11,7 +11,7 @@ import java.io.RandomAccessFile;
  * <p>TestRandomAccessFile</p>
  * <p>Description : </p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2015年5月13日 - 下午4:06:56
  */

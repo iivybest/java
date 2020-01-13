@@ -6,7 +6,7 @@ import java.lang.annotation.*;
  * <p>Size</p>
  * <p>Description : Field取值长度限制</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2014年10月30日 - 下午2:39:11
  */
@@ -31,7 +31,7 @@ public @interface Size {
      * 字段长度最小值 default 0
      *
      * @return
-     * @author miao.xl
+     * @author ivybest ivybestdev@163.com
      * @date 2014年10月30日 下午2:42:05
      * @version 1.0
      */
@@ -41,7 +41,7 @@ public @interface Size {
      * 字段长度最大值 default 100
      *
      * @return
-     * @author miao.xl
+     * @author ivybest ivybestdev@163.com
      * @date 2014年10月30日 下午2:42:14
      * @version 1.0
      */

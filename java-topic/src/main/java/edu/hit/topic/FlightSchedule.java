@@ -14,7 +14,7 @@ import org.junit.Test;
  * 对于某一天而言，航班只有两种状态'Y/N'
  * </p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2015年6月11日 - 下午3:24:46
  * @versino 1.0
  */

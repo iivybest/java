@@ -1,7 +1,7 @@
 /**
  * @Filename JavaMemoryEncodingTest
  * TODO
- * @author ivybest
+ * @author ivybest ivybestdev@163.com
  * @version V1.0
  * @date 2017年10月19日 上午9:26:09
  * @Company IB.
@@ -28,7 +28,7 @@ import java.util.Arrays;
  * <br> Java 内存字符编码测试
  * <br>----------------------------------------
  * </p>
- * @author Ivybest (ivybestdev@163.com)
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @className JavaMemoryEncodingTest
  * @date 2019/12/5 9:47

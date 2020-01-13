@@ -9,7 +9,7 @@ import java.lang.reflect.Modifier;
  * <p>TestModifiers</p>
  * <p>Description : </p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2015年6月10日 - 上午10:01:14
  */

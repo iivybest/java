@@ -1,6 +1,6 @@
 /**
  * @Package edu.hit.guide.java.adv.concrency.timer
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年3月24日-下午5:14:56
  */
 package edu.hit.adv.thread.traditionalthread;
@@ -11,7 +11,7 @@ import java.util.TimerTask;
 /**
  * TraditinalTimer
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年3月24日-下午5:14:56
  * @version 1.0
  *

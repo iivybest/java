@@ -1,6 +1,6 @@
 /**
  * @Package edu.hit.guide.java.adv.thread.concurrent.locks
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年3月28日-下午3:42:00
  */
 package edu.hit.adv.thread.concurrent.locks;
@@ -15,7 +15,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * <p>CacheDemo</p>
  * <p>自定义缓存系统</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年3月28日-下午3:42:00
  * @version 1.0
  *

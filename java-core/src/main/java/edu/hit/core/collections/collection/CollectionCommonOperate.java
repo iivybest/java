@@ -11,7 +11,7 @@ import java.util.*;
  * <p>CollectionCommonOperate</p>
  * <p>Description : 集合类基本操作 </p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2015年7月7日 - 下午3:34:34
  */

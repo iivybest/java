@@ -4,7 +4,7 @@ package edu.hit.adv.generic.user.defined.generic;
  * <p>Point</p>
  * <p>Description : 对泛型参数类型进行限制</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2015年4月24日 - 上午11:21:29
  */

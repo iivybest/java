@@ -1,6 +1,6 @@
 /**
  * @Filename RegexTest
- * @author Ivybest
+ * @author ivybest ivybestdev@163.com
  * @version V1.0
  * @date 2018年7月10日 下午4:12:12
  * @Company IB.
@@ -28,9 +28,8 @@ import java.util.regex.Pattern;
 
 /**
  * @author Ivybest imiaodev@163.com
- * @Classname RegexTest
  * @date 2018年7月10日 下午4:12:12
- * @Version 1.0
+ * @version 1.0
  * ------------------------------------------
  * TODO(这里用一句话描述这个类的作用)
  */

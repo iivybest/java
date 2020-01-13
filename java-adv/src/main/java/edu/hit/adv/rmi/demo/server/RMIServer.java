@@ -11,7 +11,7 @@ import java.rmi.registry.LocateRegistry;
  * <p>RMIServer</p>
  * <p>Description : </p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2014年11月4日 - 下午6:20:16
  */

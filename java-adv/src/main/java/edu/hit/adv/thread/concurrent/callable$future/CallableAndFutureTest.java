@@ -1,6 +1,6 @@
 /**
  * @Package edu.hit.guide.java.adv.thread.concurrent.callable$future
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年3月28日-下午2:00:28
  */
 package edu.hit.adv.thread.concurrent.callable$future;
@@ -20,7 +20,7 @@ import java.util.concurrent.locks.LockSupport;
 /**
  * CallableAndFuture
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2016年3月28日-下午2:00:28
  */
@@ -116,7 +116,7 @@ public class CallableAndFutureTest {
      * <br> Copyright@2019 www.ivybest.org Inc. All rights reserved.
      * </p>
      *
-     * @author Ivybest (ivybestdev@163.com)
+     * @author ivybest ivybestdev@163.com
      * @version 1.0
      * @date 2020/1/10 9:11
      */

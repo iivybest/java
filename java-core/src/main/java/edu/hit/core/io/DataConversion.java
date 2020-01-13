@@ -8,7 +8,7 @@ import java.io.*;
  * <p>DataConversion</p>
  * <p>Description : </p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2015年5月12日 - 上午9:45:01
  */

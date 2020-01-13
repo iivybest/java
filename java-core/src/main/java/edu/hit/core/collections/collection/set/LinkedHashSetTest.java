@@ -12,7 +12,7 @@ import java.util.Set;
 /**
  * <p>LinkedHashSetTest</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  *
  * <br>-------------------------------------

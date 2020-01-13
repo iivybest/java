@@ -6,7 +6,7 @@ package edu.hit.adv.enumeration;
  * <br> Copyright@2019 www.ivybest.org Inc. All rights reserved.
  * </p>
  *
- * @author Ivybest (ivybestdev@163.com)
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2019/12/30 7:20
  */
@@ -24,7 +24,7 @@ public class EnumSingleton2 {
     /**
      * enumeration InstanceHolder
      *
-     * @author Ivybest (ivybestdev@163.com)
+     * @author ivybest ivybestdev@163.com
      * @version 1.0
      * @date 2019/12/30 7:21
      */

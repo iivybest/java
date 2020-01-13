@@ -1,6 +1,6 @@
 /**
  * @Package edu.hit.guide.java.adv.thread.concurrent.synchronizer.healthchecher
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年3月30日-下午2:44:39
  */
 package edu.hit.adv.thread.concurrent.synchronizer.healthchecher;
@@ -10,7 +10,7 @@ import java.util.concurrent.CountDownLatch;
 /**
  * BaseHealthChecker
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年3月30日-下午2:44:39
  * @version 1.0
  *
@@ -30,7 +30,7 @@ public abstract class BaseHealthChecker implements Runnable {
      *  检查相关服务健康状况
      * @return boolean
      *
-     * @author miao.xl
+     * @author ivybest ivybestdev@163.com
      * @date 2016年3月30日-下午2:45:28
      */
     public abstract boolean verify();

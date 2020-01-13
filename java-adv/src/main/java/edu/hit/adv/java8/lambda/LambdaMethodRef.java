@@ -9,7 +9,7 @@ import java.util.function.Predicate;
 /**
  * <p>LambdaMethodRef</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2016年7月20日-上午10:28:33
  */
@@ -79,7 +79,6 @@ public class LambdaMethodRef {
      * 打印输入的字符串
      *
      * @param @param args
-     * @return void
      * @throws
      */
     public void print(String... args) {

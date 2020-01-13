@@ -11,7 +11,7 @@ import org.ivy.util.annotation.ThreadSafe;
  * <br>----------------------------------------
  * </p>
  *
- * @author Ivybest (ivybestdev@163.com)
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2019/11/28 11:26
  * @since 1.8 +

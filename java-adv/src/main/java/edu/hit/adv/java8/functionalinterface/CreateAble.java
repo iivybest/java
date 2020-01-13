@@ -5,7 +5,7 @@ package edu.hit.adv.java8.functionalinterface;
  * <p>
  * **********************************************************
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @FunctionalInterface 使用这个注解，接口有且仅有一个抽象方法
  * 没有这个注解的普通接口，有且就有一个抽象方法，也是函数式接口。

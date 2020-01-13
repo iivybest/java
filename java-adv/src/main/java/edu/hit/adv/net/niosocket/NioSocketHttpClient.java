@@ -2,7 +2,7 @@
  * Filename 	NioSocketHttpClient
  * TODO
  *
- * @author ivybest
+ * @author ivybest ivybestdev@163.com
  * @version V1.0
  * CreateDate 	2017年8月7日 下午12:32:41
  * Company 		IB.
@@ -25,7 +25,6 @@ import java.nio.charset.Charset;
 import java.util.Map;
 
 /**
- * @Classname NioSocketHttpClient
  *  简单nio http client
  * @author Createdate 2017年8月7日 下午12:32:41
  */

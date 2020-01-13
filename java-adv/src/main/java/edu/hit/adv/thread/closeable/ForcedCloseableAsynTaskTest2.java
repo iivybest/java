@@ -1,7 +1,7 @@
 /**
  * @Filename ForcedCloseableAsynTaskTest
  * TODO
- * @author ivybest
+ * @author ivybest ivybestdev@163.com
  * @version V1.0
  * @date 2017年10月25日 下午6:52:07
  * @Company IB.
@@ -25,10 +25,9 @@ import java.util.Random;
 import java.util.concurrent.locks.LockSupport;
 
 /**
- * @Classname ForcedCloseableAsynTaskTest
  * @author ivybest imiaodev@163.com
  * @date 2017年10月25日 下午6:52:07
- * @Version 1.0
+ * @version 1.0
  * ------------------------------------------
  *  强制打断线程
  */

@@ -4,7 +4,7 @@ package edu.hit.core.oo.relationship.aggregation;
  * <p>Test</p>
  * <p>Description : </p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2015年7月27日 - 下午4:37:50
  */

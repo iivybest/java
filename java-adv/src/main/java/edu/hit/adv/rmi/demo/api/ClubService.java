@@ -7,7 +7,7 @@ import java.rmi.RemoteException;
  * <p>ClubService</p>
  * <p>Description : </p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2014年11月4日 - 下午1:16:07
  */

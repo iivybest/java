@@ -9,7 +9,7 @@ import java.lang.reflect.Type;
  * <p>StudentReflect</p>
  * <p>Description:</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2014年8月7日 上午10:24:02
  */
@@ -31,7 +31,7 @@ public class StudentReflect {
      * @param clazz
      * @return 修饰符由 Java 虚拟机的 public、protected、private、
      * final、static、abstract 和 interface 对应的常量组成
-     * @author miao.xl
+     * @author ivybest ivybestdev@163.com
      * @date 2014年8月7日 上午11:05:04
      * @version 1.0
      */

@@ -6,7 +6,7 @@ import java.util.concurrent.Executors;
 /**
  * <p>FixThreadPool</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * <p>
  * 1、Executor 负责线程使用和调度的根接口

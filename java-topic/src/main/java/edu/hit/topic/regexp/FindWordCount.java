@@ -2,7 +2,7 @@
  * Filename 	FindWordCount
  * TODO
  *
- * @author ivybest
+ * @author ivybest ivybestdev@163.com
  * @version V1.0
  * CreateDate 	2017年8月9日 上午9:50:52
  * Company 		IB.
@@ -20,7 +20,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * @Classname FindWordCount
  *  TODO(这里用一句话描述这个类的作用)
  * @author
  * Createdate    2017年8月9日 上午9:50:52
@@ -30,7 +29,6 @@ public class FindWordCount {
      *  		main
      *  查找以以y,z结尾的单词个数，不区分大小写。
      * @param        args
-     * @return void
      */
     public static void main(String[] args) {
         String origin = "yellow tevez zero bily ASHILY";

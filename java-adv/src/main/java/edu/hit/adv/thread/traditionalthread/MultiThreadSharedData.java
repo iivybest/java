@@ -1,6 +1,6 @@
 /**
  * @Package edu.hit.guide.java.adv.concrency.demo
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年3月28日-上午9:36:29
  */
 package edu.hit.adv.thread.traditionalthread;
@@ -11,7 +11,7 @@ package edu.hit.adv.thread.traditionalthread;
  *		1、若每个线程执行方法相同，可使用同一个Runnable对象共享数据
  *		2、若每个线程执行方法不同，将共享数据封装一个对象，每个操作对应一个Runnable对象
  *		3、对2进行改造，Runnable对象添加标志位，不同标志位对应不同操作。
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年3月28日-上午9:36:29
  * @version 1.0
  *
@@ -22,7 +22,6 @@ public class MultiThreadSharedData {
      *  1、若每个线程执行方法相同，可使用同一个Runnable对象共享数据
      * 				买票程序
      * 				叫号程序
-     * @return void
      */
     public void strategy_1() {
         Runnable ticketsRunnable = new Runnable() {
@@ -43,7 +42,6 @@ public class MultiThreadSharedData {
     /**
      *  		strategy_2
      *  2、若每个线程执行方法不同，将共享数据封装一个对象，每个操作对应一个Runnable对象
-     * @return void
      */
     public void strategy_2() {
         ThreadSharedData data = new ThreadSharedData();
@@ -56,7 +54,6 @@ public class MultiThreadSharedData {
     /**
      *  		strategy_3
      *  3、对2进行改造，Runnable对象添加标志位，不同标志位对应不同操作。
-     * @return void
      */
     public void strategy_3() {
         ThreadSharedData data = new ThreadSharedData();

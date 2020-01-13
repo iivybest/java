@@ -8,7 +8,7 @@ import java.lang.reflect.InvocationTargetException;
 /**
  * BeanGeneralToStringMethod
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2014年12月22日 下午4:05:08
  */

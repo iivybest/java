@@ -1,6 +1,6 @@
 /**
  * @Package edu.hit.guide.java.adv.thread.concurrent.synchronizer.healthchecher
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年3月30日-下午3:03:33
  */
 package edu.hit.adv.thread.concurrent.synchronizer.healthchecher;
@@ -14,7 +14,7 @@ import java.util.concurrent.Executors;
 /**
  * <p>ApplicationStartUpChecker</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2016年3月30日-下午3:03:33
  */

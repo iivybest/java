@@ -17,7 +17,7 @@ import java.util.concurrent.Executors;
 /**
  * Siri
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2016年4月5日-上午9:11:29
  */
@@ -63,7 +63,7 @@ public class Siri {
      *
      * @param key
      * @throws IOException
-     * @author miao.xl
+     * @author ivybest ivybestdev@163.com
      * @date 2016年4月5日-上午9:18:53
      */
     private void handleKey(SelectionKey key) throws IOException {

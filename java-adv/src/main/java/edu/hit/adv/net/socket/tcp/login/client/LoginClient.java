@@ -10,7 +10,7 @@ import java.net.UnknownHostException;
 /**
  * <p>LoginClient</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2016年5月10日-下午2:52:10
  */

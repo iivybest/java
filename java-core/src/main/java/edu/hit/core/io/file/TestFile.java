@@ -10,7 +10,7 @@ import java.io.IOException;
  * <p>TestFile</p>
  * <p>Description : </p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2015年5月13日 - 上午8:39:09
  */

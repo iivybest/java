@@ -6,7 +6,7 @@ import org.junit.Test;
  * <p>EnumTest</p>
  * <p>Description : </p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2015年5月22日 - 下午4:45:20
  * @versino 1.0
  */

@@ -1,6 +1,6 @@
 /**
  * @Filename CmccTemplateDirFixHandler
- * @author Ivybest
+ * @author ivybest ivybestdev@163.com
  * @version V1.0
  * @date 2019年9月10日 上午9:41:33
  * @Company ivybest Co.,Ltd.
@@ -22,7 +22,6 @@ import java.io.File;
 import java.util.stream.Stream;
 
 /**
- * @Classname CmccTemplateDirFixHandler
  * @author ivybest imiaodev@163.com
  * @date 2019年9月10日 上午9:41:33
  * 	TODO

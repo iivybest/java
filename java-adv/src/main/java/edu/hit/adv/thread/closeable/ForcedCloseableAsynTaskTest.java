@@ -1,7 +1,7 @@
 /**
  * @Filename ForcedCloseableAsynTaskTest
  * TODO
- * @author ivybest
+ * @author ivybest ivybestdev@163.com
  * @version V1.0
  * @date 2017年10月25日 下午6:52:07
  * @Company IB.
@@ -35,7 +35,7 @@ import java.util.concurrent.locks.LockSupport;
  * <br> Copyright@2019 www.ivybest.org Inc. All rights reserved.
  * </p>
  *
- * @author Ivybest (ivybestdev@163.com)
+ * @author ivybest ivybestdev@163.com
  * @date 2017/10/25 18:52
  * @version 1.0
  */

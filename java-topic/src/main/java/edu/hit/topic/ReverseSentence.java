@@ -6,7 +6,7 @@ import java.util.Scanner;
  * <p>_002_ReverseSentence</p>
  * <p>Description : </p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2015年6月12日 - 上午9:14:24
  * @versino 1.0
  */

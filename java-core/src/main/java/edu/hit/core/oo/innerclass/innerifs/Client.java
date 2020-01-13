@@ -5,7 +5,7 @@ package edu.hit.core.oo.innerclass.innerifs;
  * <p>Client</p>
  * <p>Description : </p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2015年8月11日 - 上午8:34:05
  */

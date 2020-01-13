@@ -1,6 +1,6 @@
 /**
  * @Filename AtomicLongTest
- * @author Ivybest
+ * @author ivybest ivybestdev@163.com
  * @version V1.0
  * @date 2018年1月23日 上午9:53:52
  * @Company IB.
@@ -21,10 +21,9 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicLong;
 
 /**
- * @Classname AtomicLongTest
  * @author Ivybest imiaodev@163.com
  * @date 2018年1月23日 上午9:53:52
- * @Version 1.0
+ * @version 1.0
  * ------------------------------------------
  *  TODO(这里用一句话描述这个类的作用)
  */

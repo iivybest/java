@@ -12,7 +12,7 @@ package edu.hit.core.oo;
  * <br>----------------------------------------
  * </p>
  *
- * @author Ivybest (ivybestdev@163.com)
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @className ClassInstanceInit
  * @date 2019/12/4 12:30

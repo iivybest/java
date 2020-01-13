@@ -17,7 +17,7 @@ import java.util.Arrays;
  * <br> Copyright@2019 www.ivybest.org Inc. All rights reserved.
  * </p>
  *
- * @author Ivybest (ivybestdev@163.com)
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2014/6/3 09:58
  */

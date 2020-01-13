@@ -1,6 +1,6 @@
 /**
  * @Filename RegexTest
- * @author Ivybest
+ * @author ivybest ivybestdev@163.com
  * @version V1.0
  * @date 2018年7月10日 下午4:12:12
  * @Company IB.
@@ -15,10 +15,9 @@
 package edu.hit.topic.regexp;
 
 /**
- * @Classname RegexTest
  * @author Ivybest imiaodev@163.com
  * @date 2018年7月10日 下午4:12:12
- * @Version 1.0
+ * @version 1.0
  * ------------------------------------------
  *  TODO(这里用一句话描述这个类的作用)
  */

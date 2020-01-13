@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * <p>Student</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2016年2月18日-上午9:34:32
  */

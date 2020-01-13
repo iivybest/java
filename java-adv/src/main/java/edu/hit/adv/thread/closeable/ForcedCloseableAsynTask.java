@@ -1,6 +1,6 @@
 /**
  * @Filename ForcedCloseableAsynTask
- * @author ivybest
+ * @author ivybest ivybestdev@163.com
  * @version V1.0
  * @date 2017年10月27日 下午12:25:16
  * @Company IB.
@@ -22,10 +22,9 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.locks.LockSupport;
 
 /**
- * @Classname ForcedCloseableAsynTask
  * @author ivybest imiaodev@163.com
  * @date 2017年10月27日 下午12:25:16
- * @Version 1.0
+ * @version 1.0
  * ------------------------------------------
  *  可强制停止的异步任务
  */
@@ -225,10 +224,9 @@ public class ForcedCloseableAsynTask {
 
 
     /**
-     * @Classname Executer
      * @author ivybest imiaodev@163.com
      * @date 2017年10月27日 下午12:46:52
-     * @Version 1.0
+     * @version 1.0
      * ------------------------------------------
      *  任务执行线程，封装任务处理逻辑单元
      */

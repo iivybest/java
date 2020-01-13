@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 /**
  * @Filename CmccEInvTempTool
- * @author ivybest
+ * @author ivybest ivybestdev@163.com
  * @version V1.0
  * @date 2018年8月14日 上午10:26:30
  * @Company IB.
@@ -20,10 +20,9 @@ import java.util.Arrays;
  */
 
 /**
- * @Classname CmccEInvTempTool
  * @author ivybest imiaodev@163.com
  * @date 2018年8月14日 上午10:26:30
- * @Version 1.0
+ * @version 1.0
  *
  */
 public class CmccEInvTempTool {

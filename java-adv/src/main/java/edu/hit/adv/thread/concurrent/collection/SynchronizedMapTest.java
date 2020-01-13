@@ -1,6 +1,6 @@
 /**
  * @Package edu.hit.guide.java.adv.thread.concurrent.collection
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年3月29日-上午9:16:48
  */
 package edu.hit.adv.thread.concurrent.collection;
@@ -17,7 +17,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
  * <p>SynchronizedMapTest</p>
  *
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年3月29日-上午9:16:48
  * @version 1.0
  *

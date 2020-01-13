@@ -10,7 +10,7 @@ import java.util.List;
  * <p>CodeCounter</p>
  * <p>Description:</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2014年12月22日 下午3:52:14
  */
@@ -38,7 +38,7 @@ public class CodeCounter {
      * 计算代码行数
      *
      * @return
-     * @author miao.xl
+     * @author ivybest ivybestdev@163.com
      * @date 2014年12月22日 下午3:58:45
      * @version 1.0
      */

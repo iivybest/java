@@ -16,7 +16,7 @@ import java.lang.reflect.Method;
 /**
  * <p>SimpleReflectDemo</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2016年2月17日-下午2:07:38
  */

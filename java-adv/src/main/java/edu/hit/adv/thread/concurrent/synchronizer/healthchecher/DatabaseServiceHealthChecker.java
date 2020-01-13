@@ -1,6 +1,6 @@
 /**
  * @Package edu.hit.guide.java.adv.thread.concurrent.synchronizer.healthchecher
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年3月30日-下午3:02:13
  */
 package edu.hit.adv.thread.concurrent.synchronizer.healthchecher;
@@ -10,7 +10,7 @@ import java.util.concurrent.CountDownLatch;
 /**
  * DatabaseServiceHealthChecker 数据库服务健康检查器
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年3月30日-下午3:02:13
  * @version 1.0
  *

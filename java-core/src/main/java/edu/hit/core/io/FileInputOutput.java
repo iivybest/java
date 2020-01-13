@@ -8,7 +8,7 @@ import java.io.*;
  * <p>FileInputOutput</p>
  * <p>Description : </p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2015年5月11日 - 上午10:07:01
  */

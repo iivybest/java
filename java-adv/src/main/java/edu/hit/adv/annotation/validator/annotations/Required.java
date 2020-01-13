@@ -6,7 +6,7 @@ import java.lang.annotation.*;
  * <p>Required</p>
  * <p>Description : Field是不必须限制</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2014年10月30日 - 下午2:41:03
  */

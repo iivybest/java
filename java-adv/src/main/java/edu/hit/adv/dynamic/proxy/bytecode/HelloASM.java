@@ -13,7 +13,7 @@ import java.io.PrintStream;
 /**
  * <p>HelloASM</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2014-6-3 下午03:35:07
  */
 public class HelloASM extends ClassLoader implements Opcodes {

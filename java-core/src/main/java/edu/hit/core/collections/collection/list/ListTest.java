@@ -16,7 +16,7 @@ import java.util.stream.IntStream;
  * <p>ListTest</p>
  * <p>Description : </p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2015年7月8日 - 下午6:58:22
  */

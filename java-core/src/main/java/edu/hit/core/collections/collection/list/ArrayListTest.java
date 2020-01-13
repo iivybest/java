@@ -16,7 +16,7 @@ import java.util.List;
  * <p>ArrayListTest</p>
  * <p>Description : </p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2015年7月14日 - 上午10:14:59
  */

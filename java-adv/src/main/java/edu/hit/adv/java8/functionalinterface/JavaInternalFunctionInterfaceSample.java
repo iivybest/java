@@ -21,7 +21,7 @@ import java.util.stream.Stream;
  * <br>----------------------------------------
  * </p>
  *
- * @author Ivybest (ivybestdev@163.com)
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * <br>----------------------------------------------
  * Consumer<T>		消费型接口		void accept(T t)

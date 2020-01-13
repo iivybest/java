@@ -8,7 +8,7 @@ import java.io.*;
  * <p>Transform</p>
  * <p>Description : </p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2015年5月11日 - 下午7:30:50
  */

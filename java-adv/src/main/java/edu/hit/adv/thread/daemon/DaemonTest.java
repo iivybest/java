@@ -1,7 +1,7 @@
 /**
  * @Filename DaemonTest
  * TODO
- * @author ivybest
+ * @author ivybest ivybestdev@163.com
  * @version V1.0
  * @date 2017年9月24日 下午4:52:40
  * @Company IB.
@@ -16,11 +16,10 @@
 package edu.hit.adv.thread.daemon;
 
 /**
- * @Classname DaemonTest
  *  守护线程使用示例
  * @author ivybest miao.xl@live.cn
  * @date 2017年9月24日 下午4:52:40
- * @Version 1.0
+ * @version 1.0
  */
 public class DaemonTest {
 

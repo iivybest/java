@@ -3,6 +3,7 @@ package edu.hit.adv.thread;
 import java.util.Stack;
 import java.util.UUID;
 import java.util.concurrent.*;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * <p> description: a demo of producer and consumer
@@ -12,20 +13,29 @@ import java.util.concurrent.*;
  * <br> Copyright@2019 www.ivybest.org Inc. All rights reserved.
  * </p>
  *
- * @author Ivybest (ivybestdev@163.com)
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2015/6/2 14:36
  */
 public class ProducerConsumerDemo {
 
-    private int countProducer = 2;
-    private int countConsumer = 5;
-    private ExecutorService serviceP = new ThreadPoolExecutor(2, 2,
+    private static int countProducer = 2;
+    private static int countConsumer = 5;
+
+    private static AtomicInteger counterP = new AtomicInteger();
+    private static AtomicInteger counterC = new AtomicInteger();
+
+    private static ExecutorService serviceP = new ThreadPoolExecutor(2, 2,
             0L, TimeUnit.MILLISECONDS,
             new LinkedBlockingQueue<Runnable>(1024),
-            r -> new Thread("p-"),
+            r -> new Thread("p-" + counterP.incrementAndGet()),
             new ThreadPoolExecutor.AbortPolicy());
 
+    private static ExecutorService serviceC = new ThreadPoolExecutor(5, 5,
+            0L, TimeUnit.MILLISECONDS,
+            new LinkedBlockingQueue<Runnable>(1024),
+            r -> new Thread("c-" + counterC.incrementAndGet()),
+            new ThreadPoolExecutor.AbortPolicy());
 
     public static void main(String[] args) {
         ProducerConsumerDemo instance = new ProducerConsumerDemo();
@@ -34,21 +44,21 @@ public class ProducerConsumerDemo {
         Basket basket = new Basket();
 
         // 2个厨师做馒头
-        new Thread(new Producer(basket), "````厨子_1").start();
-        new Thread(new Producer(basket), "````厨子_2").start();
+        serviceP.execute(new Producer(basket));
+        serviceP.execute(new Producer(basket));
 
         // 5个吃货吃馒头
         for (int i = 1; i <= 4; i++) {
-            new Thread(new Consumer(basket), "----吃货_" + i).start();
+//            new Thread(new Consumer(basket), "----吃货_" + i).start();
+            serviceP.execute(new Consumer(basket));
         }
     }
 
 
     /**
      * @author ivybest imiaodev@163.com
-     * @Classname SteamedBread
      * @date 2017年11月1日 下午12:41:44
-     * @Version 1.0 ------------------------------------------
+     * @version 1.0 ------------------------------------------
      * 馒头
      */
     private static class SteamedBread {
@@ -65,11 +75,12 @@ public class ProducerConsumerDemo {
     }
 
     /**
-     * @author ivybest imiaodev@163.com
-     * @Classname Basket
-     * @date 2017年11月1日 下午12:42:08
-     * @Version 1.0 ------------------------------------------
      * 篮子
+     *
+     * @author ivybest imiaodev@163.com
+     * @date 2017年11月1日 下午12:42:08
+     * @version 1.0
+     * ------------------------------------------
      */
     private static class Basket {
         private int max;
@@ -86,11 +97,9 @@ public class ProducerConsumerDemo {
         }
 
         /**
-         * push
-         * 放入
+         * push 放入
          *
-         * @param item
-         * @return void
+         * @param item item
          */
         public synchronized void push(SteamedBread item) {
             while (stack.size() >= max) {
@@ -112,8 +121,7 @@ public class ProducerConsumerDemo {
         }
 
         /**
-         * pop
-         * 取出
+         * pop 取出
          *
          * @return SteamedBread
          */
@@ -137,11 +145,11 @@ public class ProducerConsumerDemo {
     }
 
     /**
-     * @author ivybest imiaodev@163.com
-     * @Classname Producer
-     * @date 2017年11月1日 下午12:38:55
-     * @Version 1.0 ------------------------------------------
      * 生产者
+     *
+     * @author ivybest imiaodev@163.com
+     * @date 2017年11月1日 下午12:38:55
+     * @version 1.0
      */
     private static class Producer implements Runnable {
         private int num = 0;
@@ -166,7 +174,6 @@ public class ProducerConsumerDemo {
          * produceFlow
          * 生成流程，制作一个馒头，然后放入篮子中
          *
-         * @return void
          */
         private void produceFlow() {
             this.pushSteamedBread(this.createSteamedBread());
@@ -177,7 +184,10 @@ public class ProducerConsumerDemo {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            if (num >= 20) this.setStop(true); // 每人只做20个馒头
+            if (num >= 20) {
+                // 每人只做20个馒头
+                this.setStop(true);
+            }
         }
 
         // 生产馒头
@@ -192,11 +202,11 @@ public class ProducerConsumerDemo {
     }
 
     /**
-     * @author ivybest imiaodev@163.com
-     * @Classname Consumer
-     * @date 2017年11月1日 下午12:37:54
-     * @Version 1.0 ------------------------------------------
      * 消费者
+     *
+     * @author ivybest imiaodev@163.com
+     * @date 2017年11月1日 下午12:37:54
+     * @version 1.0
      */
     private static class Consumer implements Runnable {
         private int num = 0;
@@ -216,7 +226,9 @@ public class ProducerConsumerDemo {
 
         @Override
         public void run() {
-            while (!stop) this.eat(this.popSteamedBread());
+            while (!stop) {
+                this.eat(this.popSteamedBread());
+            }
         }
 
         private SteamedBread popSteamedBread() {
@@ -231,7 +243,9 @@ public class ProducerConsumerDemo {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            if (num >= 10) this.setStop(true);
+            if (num >= 10) {
+                this.setStop(true);
+            }
         }
 
     }

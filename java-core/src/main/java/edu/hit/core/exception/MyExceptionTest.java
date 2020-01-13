@@ -2,7 +2,7 @@
  * Filename 	MyExceptionTest
  * TODO
  *
- * @author ivybest
+ * @author ivybest ivybestdev@163.com
  * @version V1.0
  * CreateDate 	2017年9月5日 下午4:39:27
  * Company 		IB.
@@ -17,7 +17,6 @@
 package edu.hit.core.exception;
 
 /**
- * @Classname MyExceptionTest
  *  TODO(这里用一句话描述这个类的作用)
  * @author
  * Createdate    2017年9月5日 下午4:39:27

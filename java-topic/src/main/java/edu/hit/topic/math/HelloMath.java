@@ -6,7 +6,7 @@ import org.junit.Test;
  * <p>HelloMath</p>
  * <p>Description : </p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2015年6月30日 - 下午4:37:05
  * @versino 1.0
  */

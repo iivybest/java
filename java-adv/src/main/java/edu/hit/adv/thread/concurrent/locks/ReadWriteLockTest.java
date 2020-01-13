@@ -1,6 +1,6 @@
 /**
  * @Package edu.hit.guide.java.adv.thread.concurrent.locks
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年3月28日-下午2:57:15
  */
 package edu.hit.adv.thread.concurrent.locks;
@@ -12,7 +12,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * <p>ReadWriteLockTest</p>
  *
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年3月28日-下午2:57:15
  * @version 1.0
  *

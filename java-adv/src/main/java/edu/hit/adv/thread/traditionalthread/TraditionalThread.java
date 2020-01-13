@@ -1,6 +1,6 @@
 /**
  * @Package edu.hit.guide.java.adv.concrency.traditionalthread
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年3月24日-下午4:48:30
  */
 package edu.hit.adv.thread.traditionalthread;
@@ -8,7 +8,7 @@ package edu.hit.adv.thread.traditionalthread;
 /**
  * <p>TraditionalThread</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年3月24日-下午4:48:30
  * @version 1.0
  *

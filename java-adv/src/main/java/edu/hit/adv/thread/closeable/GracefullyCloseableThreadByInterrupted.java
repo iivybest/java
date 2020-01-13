@@ -1,7 +1,7 @@
 /**
  * @Filename CloseThreadByInterrupted
  * TODO
- * @author ivybest
+ * @author ivybest ivybestdev@163.com
  * @version V1.0
  * @date 2017年10月25日 下午6:51:06
  * @Company IB.
@@ -19,10 +19,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * @Classname CloseThreadByInterrupted
  * @author ivybest imiaodev@163.com
  * @date 2017年10月25日 下午6:51:06
- * @Version 1.0
+ * @version 1.0
  * ------------------------------------------
  *  使用API interrupted 优雅的打断线程
  */

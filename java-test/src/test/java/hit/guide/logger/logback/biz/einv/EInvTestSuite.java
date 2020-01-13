@@ -1,6 +1,6 @@
 /**
  * @Filename EInvTestSuite
- * @author Ivybest
+ * @author ivybest ivybestdev@163.com
  * @version V1.0
  * @date 2019年9月18日 下午1:58:47
  * @Company ivybest Co.,Ltd.
@@ -19,7 +19,6 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 /**
- * @Classname EInvTestSuite
  * @author ivybest imiaodev@163.com
  * @date 2019年9月18日 下午1:58:47
  * 	TODO

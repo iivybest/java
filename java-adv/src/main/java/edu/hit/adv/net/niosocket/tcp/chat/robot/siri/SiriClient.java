@@ -15,7 +15,7 @@ import java.util.Scanner;
 /**
  * <p>SiriClient</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2016年4月5日-上午9:58:35
  */

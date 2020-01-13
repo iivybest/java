@@ -4,7 +4,7 @@ package edu.hit.core.oo.innerclass.innerifs;
  * <p>InnerIfs</p>
  * <p>Description : </p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2015年8月11日 - 上午8:33:19
  */
@@ -19,7 +19,7 @@ public interface InnerIfs {
      * </p>
      *
      * @param <T>
-     * @author miao.xl
+     * @author ivybest ivybestdev@163.com
      * @version 1.0
      * @date 2015年8月11日 - 上午9:07:44
      */

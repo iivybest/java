@@ -3,7 +3,7 @@ package edu.hit.adv.net.niosocket.tcp.chat.robot.siri;
 /**
  * <p>Test</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2016年4月5日-上午10:33:26
  */

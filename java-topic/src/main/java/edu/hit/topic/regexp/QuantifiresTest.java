@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
  * <p>QuantifiresTest</p>
  * <p>Description:</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2014年12月24日 上午10:43:32
  */

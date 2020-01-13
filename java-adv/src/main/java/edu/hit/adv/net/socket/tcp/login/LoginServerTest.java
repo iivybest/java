@@ -6,7 +6,7 @@ import edu.hit.adv.net.socket.tcp.protocol.TcpServerContext;
 /**
  * <p>LoginServerTest</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2016年5月11日-下午6:14:13
  */

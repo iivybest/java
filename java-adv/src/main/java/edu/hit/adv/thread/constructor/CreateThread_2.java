@@ -4,7 +4,6 @@ import java.util.Optional;
 
 /**
  * @author ivybest miao.xl@live.cn
- * @Classname CreateThread_2 TODO(这里用一句话描述这个类的作用)
  * @date 2017年9月19日 上午9:00:25
  */
 public class CreateThread_2 {

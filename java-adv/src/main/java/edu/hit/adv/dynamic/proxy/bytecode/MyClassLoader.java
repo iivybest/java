@@ -3,7 +3,7 @@ package edu.hit.adv.dynamic.proxy.bytecode;
 /**
  * <p>MyClassLoader</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2014-6-3 下午04:17:29
  */
 public class MyClassLoader extends ClassLoader {

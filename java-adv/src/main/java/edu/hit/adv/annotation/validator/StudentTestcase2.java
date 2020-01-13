@@ -6,7 +6,7 @@ import org.junit.*;
 /**
  * <p>Test</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2016年2月18日-上午9:36:03
  */

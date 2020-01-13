@@ -14,7 +14,7 @@ import java.util.Set;
 /**
  * <p>HashSetTest</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * <br>--------------------------------
  * HashSet 唯一，无序

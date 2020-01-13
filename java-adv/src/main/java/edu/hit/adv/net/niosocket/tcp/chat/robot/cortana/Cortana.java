@@ -11,7 +11,7 @@ import java.util.Iterator;
  * <p>Cortana</p>
  * 智能聊天机器人，Cortana，
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2016年4月1日-下午12:20:40
  */

@@ -9,7 +9,7 @@ import java.net.Socket;
 /**
  * <p>LoginSocketHandler</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2016年5月11日-下午6:43:51
  */
@@ -25,7 +25,7 @@ public class LoginSocketHandler implements SocketHandlerAble {
     /**
      * <p>LoginHandler - server处理线程</p>
      *
-     * @author miao.xl
+     * @author ivybest ivybestdev@163.com
      * @version 1.0
      * @date 2016年5月11日-下午6:05:01
      */

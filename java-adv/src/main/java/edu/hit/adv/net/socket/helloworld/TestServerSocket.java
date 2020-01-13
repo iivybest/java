@@ -9,7 +9,7 @@ import java.net.ServerSocket;
 /**
  * <p>TestServerSocket</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2016年5月10日-上午10:47:31
  */

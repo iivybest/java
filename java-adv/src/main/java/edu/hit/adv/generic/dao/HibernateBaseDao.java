@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * <p>HibernateBaseDao</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2016年2月22日-下午12:28:55
  */

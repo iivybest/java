@@ -4,7 +4,7 @@ package edu.hit.adv.enumeration;
  * <p>Week</p>
  * <p>Description : </p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2015年5月22日 - 下午4:44:19
  * @versino 1.0
  */

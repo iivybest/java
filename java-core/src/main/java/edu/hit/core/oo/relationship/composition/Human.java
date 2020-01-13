@@ -4,7 +4,7 @@ package edu.hit.core.oo.relationship.composition;
  * <p>Human</p>
  * <p>Description : </p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2015年7月28日 - 上午9:22:39
  */

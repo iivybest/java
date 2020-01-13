@@ -1,7 +1,7 @@
 /**
  * @Filename DoubleTest
  * TODO
- * @author ivybest
+ * @author ivybest ivybestdev@163.com
  * @version V1.0
  * @date 2017年12月24日 上午9:31:55
  * @Company IB.
@@ -18,10 +18,9 @@ package edu.hit.topic.number;
 import org.junit.Test;
 
 /**
- * @Classname DoubleTest
  * @author ivybest imiaodev@163.com
  * @date 2017年12月24日 上午9:31:55
- * @Version 1.0
+ * @version 1.0
  * ------------------------------------------
  *  TODO(这里用一句话描述这个类的作用)
  */

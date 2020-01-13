@@ -2,7 +2,7 @@
  * Filename 	JvmMemStructureImitate
  * TODO
  *
- * @author ivybest
+ * @author ivybest ivybestdev@163.com
  * @version V1.0
  * CreateDate 	2017年9月18日 下午7:40:35
  * Company 		IB.
@@ -17,9 +17,8 @@
 package edu.hit.adv.thread.constructor;
 
 /**
- * @Classname JvmMemStructureImitate
  *  jvm 内存结构模拟
- * @author ivybest
+ * @author ivybest ivybestdev@163.com
  * Createdate 	2017年9月18日 下午7:40:35 
  */
 public class JvmMemStructureImitate {

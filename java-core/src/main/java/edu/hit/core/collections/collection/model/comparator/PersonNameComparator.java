@@ -8,7 +8,7 @@ import java.util.Comparator;
  * <p>PersonNameComparator</p>
  * <p>Description : </p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2015年7月15日 - 上午9:44:55
  */

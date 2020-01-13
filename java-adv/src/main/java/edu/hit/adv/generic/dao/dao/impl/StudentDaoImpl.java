@@ -1,7 +1,7 @@
 /**
  * <p>StudentDaoImpl</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年2月22日-下午12:34:23
  * @version 1.0
  */
@@ -18,7 +18,7 @@ import java.util.List;
  * <p>StudentDaoImpl</p>
  *
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年2月22日-下午12:34:23
  * @version 1.0
  *

@@ -7,7 +7,7 @@ import java.lang.reflect.InvocationTargetException;
  * <p>BeanIntrospector</p>
  * <p>Description : </p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2014年11月9日 - 下午10:28:53
  */

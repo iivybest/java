@@ -1,6 +1,6 @@
 /**
  * @Filename RoncooFileHandler
- * @author Ivybest
+ * @author ivybest ivybestdev@163.com
  * @version V1.0
  * @date 2018年4月20日 上午10:48:02
  * @Company IB.
@@ -19,10 +19,9 @@ import org.ivy.util.common.FileUtil;
 import java.io.File;
 
 /**
- * @Classname RoncooFileHandler
  * @author Ivybest imiaodev@163.com
  * @date 2018年4月20日 上午10:48:02
- * @Version 1.0
+ * @version 1.0
  * ------------------------------------------
  *  TODO(这里用一句话描述这个类的作用)
  */

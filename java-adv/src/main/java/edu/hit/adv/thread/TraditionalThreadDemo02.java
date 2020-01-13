@@ -14,7 +14,7 @@ import java.util.stream.IntStream;
  * <br> Copyright@2019 www.ivybest.org Inc. All rights reserved.
  * </p>
  * 
- * @author Ivybest (ivybestdev@163.com)
+ * @author ivybest ivybestdev@163.com
  * @date 2015/5/15 16:39
  * @version 1.0
  */
@@ -35,7 +35,7 @@ public class TraditionalThreadDemo02 {
      * <br> Copyright@2019 www.ivybest.org Inc. All rights reserved.
      * </p>
      *
-     * @author Ivybest (ivybestdev@163.com)
+     * @author ivybest ivybestdev@163.com
      * @date 2020/1/6 15:01
      * @version 1.0
      */
@@ -66,7 +66,7 @@ public class TraditionalThreadDemo02 {
      * <br> Copyright@2019 www.ivybest.org Inc. All rights reserved.
      * </p>
      *
-     * @author Ivybest (ivybestdev@163.com)
+     * @author ivybest ivybestdev@163.com
      * @date 2020/1/6 15:02
      * @version 1.0
      */

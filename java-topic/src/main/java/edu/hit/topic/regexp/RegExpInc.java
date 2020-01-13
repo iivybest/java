@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
  * <p>RegExpInc</p>
  * <p>Description:</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2014年12月19日 上午9:49:42
  */

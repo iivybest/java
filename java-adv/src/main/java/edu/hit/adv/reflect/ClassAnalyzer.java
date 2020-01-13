@@ -11,7 +11,7 @@ import java.util.Scanner;
  * <p>
  * Java类分析器
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2014-5-30 下午12:33:09
  */
 public class ClassAnalyzer {

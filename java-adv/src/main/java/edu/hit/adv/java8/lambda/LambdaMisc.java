@@ -6,7 +6,7 @@ import edu.hit.adv.java8.functionalinterface.CreateAble;
 /**
  * <p>LambdaMisc</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2016年7月5日-上午11:34:00
  */

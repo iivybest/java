@@ -1,6 +1,6 @@
 /**
  * @Filename ReadFile
- * @author Ivybest
+ * @author ivybest ivybestdev@163.com
  * @version V1.0
  * @date 2019年10月25日 上午11:13:37
  * @Company ivybest Co.,Ltd.
@@ -18,7 +18,6 @@ import org.ivy.util.common.FileUtil;
 import org.ivy.xutil.sec.Base64Util;
 
 /**
- * @Classname ReadFile
  * @author ivybest imiaodev@163.com
  * @date 2019年10月25日 上午11:13:37
  * 	TODO

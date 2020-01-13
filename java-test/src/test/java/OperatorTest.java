@@ -11,7 +11,7 @@ import java.util.List;
  * <br>Copyright@2019 www.ivybest.org Inc. All rights reserved.
  * </p>
  *
- * @author Ivybest (ivybestdev@163.com)
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @className OperatorTest
  * @date 2017/12/27 15:17

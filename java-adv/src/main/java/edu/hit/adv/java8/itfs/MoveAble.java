@@ -6,7 +6,7 @@ package edu.hit.adv.java8.itfs;
  * <br> Copyright@2019 www.ivybest.org Inc. All rights reserved.
  * </p>
  * 
- * @author Ivybest (ivybestdev@163.com)
+ * @author ivybest ivybestdev@163.com
  * @date 2016/7/19 19:03
  * @version 1.0
  */

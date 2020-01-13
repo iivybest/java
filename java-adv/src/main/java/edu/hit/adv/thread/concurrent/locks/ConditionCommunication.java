@@ -1,6 +1,6 @@
 /**
  * @Package edu.hit.guide.java.adv.thread.concurrent.locks
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年3月28日-下午4:14:52
  */
 package edu.hit.adv.thread.concurrent.locks;
@@ -15,7 +15,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * 	condition	锁的通信机制，类似 wait 和 notify, 比wait notify 方式更灵活
  * </p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年3月28日-下午4:14:52
  * @version 1.0
  *

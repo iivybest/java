@@ -12,7 +12,7 @@ import java.lang.reflect.InvocationTargetException;
 /**
  * <p>AsmDemo</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2014-6-3 下午04:15:36
  */
 public class AsmDemo {

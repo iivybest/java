@@ -3,7 +3,7 @@ package edu.hit.adv.java8.itfs;
 /**
  * <p>ThinkAble</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2016年7月19日-下午7:04:01
  */

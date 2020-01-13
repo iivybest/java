@@ -1,6 +1,6 @@
 /**
  * @Package edu.hit.guide.java.adv.thread.concurrent.synchronizer
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年3月29日-上午8:49:16
  */
 package edu.hit.adv.thread.concurrent.synchronizer;

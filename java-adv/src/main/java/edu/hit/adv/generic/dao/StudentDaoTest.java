@@ -1,7 +1,7 @@
 /**
  * <p>Test</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年2月22日-下午12:35:51
  * @version 1.0
  */
@@ -18,7 +18,7 @@ import org.junit.Test;
  * <p>Test</p>
  *
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年2月22日-下午12:35:51
  * @version 1.0
  *

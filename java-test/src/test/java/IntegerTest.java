@@ -3,9 +3,8 @@ import org.junit.Test;
 
 /**
  * @author Ivybest imiaodev@163.com
- * @Classname TestInteger
  * @date 2018年3月15日 下午7:27:57
- * @Version 1.0 ------------------------------------------
+ * @version 1.0 ------------------------------------------
  * TODO(这里用一句话描述这个类的作用)
  */
 public class IntegerTest {

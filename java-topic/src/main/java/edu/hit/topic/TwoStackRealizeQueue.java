@@ -8,7 +8,7 @@ import java.util.Stack;
  * <p>TwoStackRealizeQueue</p>
  * <p>Description : </p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2015年6月11日 - 下午5:04:33
  * @versino 1.0
  */

@@ -1,6 +1,6 @@
 /**
  * @Package edu.hit.guide.java.adv.thread.concurrent.synchronizer
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年3月29日-上午8:48:02
  */
 package edu.hit.adv.thread.concurrent.synchronizer;
@@ -20,7 +20,7 @@ import java.util.concurrent.Semaphore;
  * <br>----------------------------------------
  * </p>
  * @className SemaphoreTest
- * @author Ivybest (ivybestdev@163.com)
+ * @author ivybest ivybestdev@163.com
  * @date 2019/11/28 10:35
  * @version 1.0
  * @since 1.5+
@@ -45,7 +45,6 @@ public class SemaphoreTest {
 }
 
 /**
- * @Classname Customer
  *  TODO(这里用一句话描述这个类的作用)
  * @author
  * Createdate    2016年3月29日 上午10:06:12
@@ -80,7 +79,6 @@ class Customer implements Runnable {
 }
 
 /**
- * @Classname Restaurant
  *  TODO(这里用一句话描述这个类的作用)
  * @author
  * Createdate    2016年3月29日 上午10:07:46

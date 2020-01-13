@@ -10,7 +10,7 @@ import java.util.Date;
  * <p>Employer</p>
  * <p>Description : 实现Externalizable，可自行定义序列化与反序列化过程</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2015年5月12日 - 下午6:49:41
  */

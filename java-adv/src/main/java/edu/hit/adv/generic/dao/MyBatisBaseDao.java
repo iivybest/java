@@ -1,7 +1,7 @@
 /**
  * <p>MyBatisBaseDao</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年2月22日-下午12:28:55
  * @version 1.0
  */
@@ -15,7 +15,7 @@ import java.util.Map;
  * <p>MyBatisBaseDao</p>
  *
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年2月22日-下午12:28:55
  * @version 1.0
  *

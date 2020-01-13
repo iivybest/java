@@ -8,7 +8,7 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 
 /**
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2015年5月14日 - 上午10:36:47
  */

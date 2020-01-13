@@ -13,7 +13,7 @@ import java.util.Properties;
  * <br>----------------------------------------
  * </p>
  *
- * @author Ivybest (ivybestdev@163.com)
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @className JavaRunntimeTest
  * @date 2019/12/5 13:25

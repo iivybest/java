@@ -1,7 +1,7 @@
 package edu.hit.adv.thread.constructor;
 
 /**
- * @author ivybest
+ * @author ivybest ivybestdev@163.com
  */
 public class CreateThread_1 {
 

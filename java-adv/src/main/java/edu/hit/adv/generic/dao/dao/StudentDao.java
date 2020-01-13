@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * <p>StudentDao</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2016年2月22日-下午12:32:05
  */

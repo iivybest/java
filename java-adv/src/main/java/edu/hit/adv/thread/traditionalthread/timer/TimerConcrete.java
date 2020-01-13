@@ -8,7 +8,7 @@ import java.util.TimerTask;
  * <p>TimerConcrete</p>
  * <p>Description : </p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2015年7月20日 - 下午2:56:29
  */

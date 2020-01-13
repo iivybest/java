@@ -11,7 +11,7 @@ import java.net.URLClassLoader;
 /**
  * <p>JdkDynamicCompiler</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2014年8月28日 - 上午9:23:22
  */
 public class JdkDynamicCompiler {

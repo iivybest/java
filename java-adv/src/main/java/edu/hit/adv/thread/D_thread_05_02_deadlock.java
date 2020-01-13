@@ -8,7 +8,7 @@ import java.util.concurrent.CountDownLatch;
  * <p>D_thread_05_deadlock</p>
  * <p>Description : </p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2015年6月2日 - 上午9:25:58
  */

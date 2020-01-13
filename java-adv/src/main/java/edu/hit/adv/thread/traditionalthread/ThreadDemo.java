@@ -1,6 +1,6 @@
 /**
  * @Package edu.hit.guide.java.adv.concrency.traditionalthread
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年3月25日-上午9:13:53
  */
 package edu.hit.adv.thread.traditionalthread;
@@ -9,7 +9,7 @@ package edu.hit.adv.thread.traditionalthread;
  * ThreadDemo
  * 两个线程对同一对象加锁，使两个线程交替执行
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2016年3月25日-上午9:13:53
  * @version 1.0
  *

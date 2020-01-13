@@ -1,7 +1,7 @@
 /**
  * @Filename ArrayInitializeDemo
  * TODO
- * @author ivybest
+ * @author ivybest ivybestdev@163.com
  * @version V1.0
  * @date 2017年10月16日 上午9:26:03
  * @Company IB.
@@ -34,7 +34,7 @@ import java.util.stream.Stream;
  * <br> Copyright@2019 www.ivybest.org Inc. All rights reserved.
  * </p>
  *
- * @author Ivybest (ivybestdev@163.com)
+ * @author ivybest ivybestdev@163.com
  * @date 2017/10/16 16:23
  * @version 1.0
  */

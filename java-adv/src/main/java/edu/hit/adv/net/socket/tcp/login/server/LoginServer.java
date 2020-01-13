@@ -12,7 +12,7 @@ import java.net.Socket;
 /**
  * <p>LoginServer</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2016年5月10日-下午2:51:55
  */
@@ -67,7 +67,7 @@ public class LoginServer implements TcpServerAble {
     /**
      * <p>close - 关闭服务</p>
      *
-     * @author miao.xl
+     * @author ivybest ivybestdev@163.com
      * @date 2016年5月10日-下午4:15:14
      */
     private void close() {

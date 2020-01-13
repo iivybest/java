@@ -6,7 +6,7 @@ import java.util.Date;
  * <p>GenericFactory</p>
  * <p>Description : </p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2015年4月24日 - 上午10:15:47
  */

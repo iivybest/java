@@ -12,7 +12,7 @@ import java.util.Map;
  * <p>ClubServiceImpl</p>
  * <p>Description : </p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2014年11月4日 - 下午1:17:58
  */

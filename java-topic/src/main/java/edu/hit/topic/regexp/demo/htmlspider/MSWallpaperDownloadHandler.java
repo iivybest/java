@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
 /**
  * 微软壁纸下载
  *
- * @author ivybest
+ * @author ivybest ivybestdev@163.com
  */
 public class MSWallpaperDownloadHandler {
 

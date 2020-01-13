@@ -1,6 +1,6 @@
 /**
  * @Filename WrapperClassTest
- * @author Ivybest
+ * @author ivybest ivybestdev@163.com
  * @version V1.0
  * @date 2018年5月21日 下午5:15:17
  * @Company IB.
@@ -17,10 +17,9 @@ package edu.hit.core.primitive;
 import org.junit.Test;
 
 /**
- * @Classname WrapperClassTest
  * @author Ivybest imiaodev@163.com
  * @date 2018年5月21日 下午5:15:17
- * @Version 1.0
+ * @version 1.0
  * ------------------------------------------
  *  TODO(这里用一句话描述这个类的作用)
  * --------------------------------------------------

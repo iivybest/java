@@ -8,7 +8,7 @@ import org.junit.runners.MethodSorters;
  * <p>OperatorPriority</p>
  * <p>Description : </p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2015年7月14日 - 下午5:07:29
  * @versino 1.0
  */

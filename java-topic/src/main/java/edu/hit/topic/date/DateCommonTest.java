@@ -8,7 +8,7 @@ import java.util.*;
 /**
  * DateCommonTest
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2015年6月3日 - 上午10:58:15
  */

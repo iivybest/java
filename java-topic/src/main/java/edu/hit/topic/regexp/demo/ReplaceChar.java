@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
  * <p>ReplaceChar</p>
  * <p>Description:</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2014年12月19日 下午4:06:50
  */

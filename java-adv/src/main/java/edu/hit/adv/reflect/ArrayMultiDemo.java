@@ -9,7 +9,7 @@ import java.util.Arrays;
  * <p>ArrayMultiDemo</p>
  * <p>利用Array动态创建多维数组</p>
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2016年2月17日-下午2:33:35
  */

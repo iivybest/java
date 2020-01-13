@@ -7,7 +7,7 @@ import javax.naming.NamingException;
 /**
  * Basis
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2014年11月27日 - 下午6:03:50
  */

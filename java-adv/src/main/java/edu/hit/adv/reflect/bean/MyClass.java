@@ -13,7 +13,7 @@ import java.util.Date;
  * 6、注解
  * 7、内部类
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @date 2014-5-30 上午09:07:25
  */
 @SuppressWarnings(value = "unchecked")    // 起作用与源代码阶段，不会编译到类中

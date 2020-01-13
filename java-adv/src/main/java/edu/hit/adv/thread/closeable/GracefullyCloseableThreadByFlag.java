@@ -2,9 +2,8 @@ package edu.hit.adv.thread.closeable;
 
 /**
  * @author ivybest imiaodev@163.com
- * @Classname GracefullyCloseableThreadByFlag
  * @date 2017年10月27日 下午8:55:31
- * @Version 1.0 ------------------------------------------
+ * @version 1.0 ------------------------------------------
  * 使用标识位实现优雅的停止线程
  */
 public class GracefullyCloseableThreadByFlag {

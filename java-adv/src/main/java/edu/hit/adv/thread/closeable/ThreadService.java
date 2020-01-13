@@ -1,6 +1,6 @@
 /**
  * @Filename ThreadService
- * @author ivybest
+ * @author ivybest ivybestdev@163.com
  * @version V1.0
  * @date 2018年7月25日 下午5:10:31
  * @Company IB.
@@ -15,10 +15,9 @@
 package edu.hit.adv.thread.closeable;
 
 /**
- * @Classname ThreadService
  * @author ivybest imiaodev@163.com
  * @date 2018年7月25日 下午5:10:31
- * @Version 1.0
+ * @version 1.0
  * ------------------------------------------
  *  TODO(这里用一句话描述这个类的作用)
  */

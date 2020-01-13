@@ -13,7 +13,7 @@ import java.util.ResourceBundle;
 /**
  * I18nDynTest
  *
- * @author miao.xl
+ * @author ivybest ivybestdev@163.com
  * @version 1.0
  * @date 2015年5月15日 - 上午9:07:13
  */
