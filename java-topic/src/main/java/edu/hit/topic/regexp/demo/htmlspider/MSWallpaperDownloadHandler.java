@@ -15,7 +15,6 @@ import java.util.regex.Pattern;
  * @author ivybest
  */
 public class MSWallpaperDownloadHandler {
-
     // 原始页面内容
     private String content;
     // 下载目录
@@ -47,23 +46,31 @@ public class MSWallpaperDownloadHandler {
         this.content = new String(FileUtil.read(urlpath));
         this.dest = dest;
         this.downloadLog = new File(this.dest + File.separator + "download.txt");
-        if (!this.downloadLog.exists()) FileUtil.createNewFile(downloadLog);
+        if (!this.downloadLog.exists()) {
+            FileUtil.createNewFile(downloadLog);
+        }
 
         // initialize
         this.downloadedList = new ArrayList<String>();
         String downlistfilecon = new String(FileUtil.read(this.downloadLog));
         String[] items = downlistfilecon.trim().split("\n");
-        for (String item : items) this.downloadedList.add(item);
+        for (String item : items) {
+            this.downloadedList.add(item);
+        }
     }
 
 
     public static void main(String[] args) {
         String url = "F:/MyFiles/Audio/Storytelling/明朝那些事儿/明朝那些事儿11（朱常洛篇）";
         File[] files = FileUtil.getAllNonDirFileList(url);
-        StringBuffer sb = new StringBuffer();
-        for (File file : files) sb.append(file.getName()).append("\n");
+        StringBuilder sb = new StringBuilder();
+        for (File file : files) {
+            sb.append(file.getName()).append("\n");
+        }
         String st = null;
-        if (sb.length() > 0) st = sb.substring(0, sb.length() - 1);
+        if (sb.length() > 0) {
+            st = sb.substring(0, sb.length() - 1);
+        }
         System.out.println(st);
         FileUtil.writer(url + "/down.txt", "\n" + st, true);
         FileUtil.writer(url + "/down.txt", "\n" + "conima", true);
@@ -81,8 +88,9 @@ public class MSWallpaperDownloadHandler {
 
 //		for(String item : items) System.out.println(item);
         for (String item : items) {
-            if (this.downloadedList == null || !this.downloadedList.contains(item))
+            if (this.downloadedList == null || !this.downloadedList.contains(item)) {
                 this.download(this.dest, this.process(item));
+            }
         }
 
     }
@@ -107,7 +115,9 @@ public class MSWallpaperDownloadHandler {
 
         Matcher m = Pattern.compile(regex).matcher(original);
 
-        while (m.find()) result.add(m.group());
+        while (m.find()) {
+            result.add(m.group());
+        }
 
         return result;
     }
@@ -126,12 +136,15 @@ public class MSWallpaperDownloadHandler {
 
 
     public void download(String location, String[] args) {
-        if (args == null || args[1].length() <= 0) return;
+        if (args == null || args[1].length() <= 0) {
+            return;
+        }
 
         FileUtil.checkDir(location);
         File file = new File(location + "/" + args[0] + ".jpg");
-        if (!file.exists())
+        if (!file.exists()) {
             FileUtil.write(file, HttpClient.service(args[1], "GET", null));
+        }
         // 将下载的文件记录到日志中
         FileUtil.writer(this.downloadLog, "\n" + file.getName());
         System.out.println("----> " + file.getName() + " download successed...");

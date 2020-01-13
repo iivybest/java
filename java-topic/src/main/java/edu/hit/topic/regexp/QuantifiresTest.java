@@ -27,8 +27,8 @@ public class QuantifiresTest {
     }
 
     public static void main(String[] args) {
-        String original = "aaaa5bbbb6";
-//		String original = "aaaa5bbbb66";
+        String data = "aaaa5bbbb6";
+//		String data = "aaaa5bbbb66";
 
         /*
          * Greedy quantifiers
@@ -36,7 +36,7 @@ public class QuantifiresTest {
          * 吐出一个字符在进行匹配，直到匹配上为止
          */
         String greedyRegEx = "(.{3,10})\\d";
-        print("----greedy-- " + regExp(original, greedyRegEx));
+        print("----greedy-- " + regExp(data, greedyRegEx));
 
         /*
          * Reluctant quantifiers
@@ -44,13 +44,13 @@ public class QuantifiresTest {
          * 在吞进一个继续匹配，直到匹配为止
          */
         String reluctantRegEx = "(.{3,10}?)\\d";
-        print("----reluctant-- " + regExp(original, reluctantRegEx));
+        print("----reluctant-- " + regExp(data, reluctantRegEx));
 
         /*
          * Possessive quantifiers
          * possessive 见到{3,10}，一次吞进10个字符，往后匹配时若不匹配，不吐出，直接退出
          */
         String possessiveRegEx = "(.{3,10}+)\\d";
-        print("----possessive-- " + regExp(original, possessiveRegEx));
+        print("----possessive-- " + regExp(data, possessiveRegEx));
     }
 }
