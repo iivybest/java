@@ -22,15 +22,17 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.locks.LockSupport;
 
 /**
+ * 可强制停止的异步任务
+ *
  * @author ivybest imiaodev@163.com
- * @date 2017年10月27日 下午12:25:16
  * @version 1.0
- * ------------------------------------------
- *  可强制停止的异步任务
+ * @date 2017年10月27日 下午12:25:16
  */
 public class ForcedCloseableAsynTask {
-    private final static Logger LOGGER = LoggerFactory.getLogger(ForcedCloseableAsynTask.class);
+    private final static Logger log = LoggerFactory.getLogger(ForcedCloseableAsynTask.class);
 
+    // 当前任务名称默认自增序列
+    private static int sequence;
     // 当前任务线程
     private volatile Thread currentTask;
     // 当前任务观察线程
@@ -41,8 +43,6 @@ public class ForcedCloseableAsynTask {
     private volatile AtomicBoolean finished = new AtomicBoolean(false);
     // 当前任务名称
     private String taskName;
-    // 当前任务名称默认自增序列
-    private static int sequence;
     // 任务超时时长
     private Long timeout;
     // 扫描时间间隔
@@ -74,13 +74,13 @@ public class ForcedCloseableAsynTask {
     }
 
     /**
-     *  		execute
-     * @param        task
-     * @param        taskName
+     * execute
+     *
+     * @param task task
      * @return ForcedCloseableAsynTask
      *
      * <br>-------------------------------------------
-     * 		1、设置当前任务为 task，并执行
+     * 1、设置当前任务为 task，并执行
      * <br>-------------------------------------------
      */
     public ForcedCloseableAsynTask execute(Runnable task) {
@@ -90,15 +90,17 @@ public class ForcedCloseableAsynTask {
     }
 
     /**
-     *  		callback
-     *  为当前任务设置回调函数线程任务
-     * @param        target
+     * callback
+     * 为当前任务设置函数线程任务
+     *
+     * @param target task
      * @return ForcedCloseableAsynTask
      */
     public ForcedCloseableAsynTask callback(Runnable target) {
         this.callbackTask = new Thread(() -> {
             // ----线程阻塞----等待任务线程执行完毕
-            for (; !this.finished.get(); LockSupport.parkUntil(DateTimeUtil.getTimestamp() + this.interval)) ;
+            for (; !this.finished.get(); LockSupport.parkUntil(DateTimeUtil.getTimestamp() + this.interval)) {
+            }
             // ----执行回调逻辑
             if (ForcedCloseableAsynTask.this.finished.get()) {
                 Thread t = new Thread(target, this.taskName + "#callback");
@@ -114,16 +116,10 @@ public class ForcedCloseableAsynTask {
         this.callbackTask.start();
         return this;
     }
-
     /**
-     *  		shutdown
-     *  在指定的时间内结束当前任务
-     * @param        mills
-     * @return ForcedCloseableAsynTask
-     */
-    /**
-     * : shutdown
-     * : 在指定的时间内结束当前任务, 并在结束前执行target任务
+     * shutdown
+     * 在指定的时间内结束当前任务, 并在结束前执行target任务
+     *
      * @param mills
      * @param target
      * @return ForcedCloseableAsynTask
@@ -136,13 +132,13 @@ public class ForcedCloseableAsynTask {
             while (!ForcedCloseableAsynTask.this.finished.get()) {
                 if (DateTimeUtil.getTimestamp() - beginTimestamp >= this.timeout) {
                     ForcedCloseableAsynTask.this.currentTask.interrupt();
-                    LOGGER.error("====>[{}]-interrupted_by-[{}]...",
+                    log.error("====>[{}]-interrupted_by-[{}]...",
                             ForcedCloseableAsynTask.this.currentTask.getName(),
                             Thread.currentThread().getName());
                     break;
                 }
                 // 当前执行线程睡眠1毫秒
-                LockSupport.parkUntil(DateTimeUtil.getTimestamp() +1);
+                LockSupport.parkUntil(DateTimeUtil.getTimestamp() + 1);
 //                try {
 //                    ForcedCloseableAsynTask.this.watcher.sleep(1);
 //                } catch (Exception e) {
@@ -158,9 +154,10 @@ public class ForcedCloseableAsynTask {
     }
 
     /**
-     *  		shutdown
-     *  在指定的时间内结束当前任务
-     * @param        mills
+     * shutdown
+     * 在指定的时间内结束当前任务
+     *
+     * @param mills
      * @return ForcedCloseableAsynTask
      */
     @SuppressWarnings("static-access")
@@ -171,13 +168,13 @@ public class ForcedCloseableAsynTask {
             while (!ForcedCloseableAsynTask.this.finished.get()) {
                 if (DateTimeUtil.getTimestamp() - beginTimestamp >= this.timeout) {
                     ForcedCloseableAsynTask.this.currentTask.interrupt();
-                    LOGGER.error("====>[{}] interrupted by [{}]...",
+                    log.error("====>[{}] interrupted by [{}]...",
                             ForcedCloseableAsynTask.this.currentTask.getName(),
                             Thread.currentThread().getName());
                     break;
                 }
                 // 当前执行线程睡眠1毫秒
-                LockSupport.parkUntil(DateTimeUtil.getTimestamp() +1);
+                LockSupport.parkUntil(DateTimeUtil.getTimestamp() + 1);
             }
         }, this.taskName() + "#watcher");
         this.watcher.setDaemon(true);
@@ -186,9 +183,9 @@ public class ForcedCloseableAsynTask {
     }
 
     /**
-     *  		shutdown
-     *  立刻打断当前任务
-     * @return
+     * shutdown
+     * 立刻打断当前任务
+     *
      * @return ForcedCloseableAsynTask
      */
     public ForcedCloseableAsynTask shutdown() {
@@ -197,8 +194,9 @@ public class ForcedCloseableAsynTask {
     }
 
     /**
-     *  		taskName
-     *  获取当前任务名称
+     * taskName
+     * 获取当前任务名称
+     *
      * @return String
      */
     public String taskName() {
@@ -212,9 +210,10 @@ public class ForcedCloseableAsynTask {
     }
 
     /**
-     *  		taskName
-     *  设置当前任务名称
-     * @param        taskName
+     * taskName
+     * 设置当前任务名称
+     *
+     * @param taskName
      * @return ForcedCloseableAsynTask
      */
     public ForcedCloseableAsynTask taskName(String taskName) {
@@ -225,10 +224,10 @@ public class ForcedCloseableAsynTask {
 
     /**
      * @author ivybest imiaodev@163.com
-     * @date 2017年10月27日 下午12:46:52
      * @version 1.0
      * ------------------------------------------
-     *  任务执行线程，封装任务处理逻辑单元
+     * 任务执行线程，封装任务处理逻辑单元
+     * @date 2017年10月27日 下午12:46:52
      */
     private class Executer implements Runnable {
         private Runnable target;
@@ -253,10 +252,10 @@ public class ForcedCloseableAsynTask {
 
             try {
                 daemonWorker.join();
-                LOGGER.info("====>[{}]-finished", Thread.currentThread().getName());
+                log.info("====>[{}]-finished", Thread.currentThread().getName());
             } catch (InterruptedException e) {
                 // 任务执行线程被打断，结束,daemon 线程也就结束了，实现暴力结束任务
-                LOGGER.error("====>task:{}, timeout:{}, msg:{}",
+                log.error("====>task:{}, timeout:{}, msg:{}",
                         Thread.currentThread().getName(),
                         ForcedCloseableAsynTask.this.timeout,
                         "interrupted forced by watcher thread");

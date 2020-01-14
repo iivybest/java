@@ -174,9 +174,9 @@
 
 
     <!-- 自定义业务流程日志 -->
-    <appender name="biz_einv_appender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <appender name="spider_bian_appender" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <Encoding>UTF-8</Encoding>
-        <File>${log.dir}/biz.einv.log</File>
+        <File>${log.dir}/spider.bian.log</File>
         <rollingPolicy
                 class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <FileNamePattern>
@@ -258,8 +258,8 @@
         * 根据业务 einv 制定追踪日志，存放到指定目录中
         * 业务标识 biz.einv
      -->
-    <logger name="biz.einv" level="${log.level}" additivity="true">
-        <appender-ref ref="biz_einv_appender"/>
+    <logger name="spider.bian" level="${log.level}" additivity="true">
+        <appender-ref ref="spider_bian_appender"/>
     </logger>
 
     <!-- the level of the root level is set to DEBUG by default. -->
